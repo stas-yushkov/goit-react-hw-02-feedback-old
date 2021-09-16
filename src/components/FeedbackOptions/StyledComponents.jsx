@@ -8,10 +8,6 @@ export const ListItem = styled.li`
   }
 `;
 
-export const Title = styled.h2`
-  color:red;
-`;
-
 export const Button = styled.button`
   padding: 8px;
 `;

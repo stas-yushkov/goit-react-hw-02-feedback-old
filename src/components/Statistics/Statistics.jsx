@@ -1,20 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Title } from './StyledComponents';
-import countTotalFeedback from '../../utils/countTotalFeedback'
-import countPositiveFeedbackPercentage from '../../utils/countPositiveFeedbackPercentage'
+
 
 const Statistics = (props) => {
-  const { good, neutral, bad } = props.stats
+  const { good, neutral, bad, total, positivePercentage } = props
 
   return (
     <div>
-      <Title>Statistics</Title>
       <p>Good: {good}</p>
       <p>Neutral: {neutral}</p>
       <p>Bad: {bad}</p>
-      <p>Total: {countTotalFeedback(props.stats)}</p>
-      <p>Positive feedback: {countPositiveFeedbackPercentage(props.stats)}</p>
+      <p>Total: {total}</p>
+      <p>Positive feedback: {positivePercentage}</p>
     </div>
   )
 };

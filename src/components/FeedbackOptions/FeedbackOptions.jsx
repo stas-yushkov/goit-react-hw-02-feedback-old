@@ -1,21 +1,20 @@
 import React, { Component } from 'react';
 import { capitalize } from '../../utils';
-import { ListItem, Title, Button, ButtonList } from './StyledComponents';
+import { ListItem, Button, ButtonList } from './StyledComponents';
 
-class FeedBackOptions extends Component {
+class FeedbackOptions extends Component {
   render() {
-    const { buttonList } = this.props
+    const { options, onLeaveFeedback } = this.props
 
     return (
       <div>
-        <Title>Please leave feedback</Title>
         <ButtonList>
-          {buttonList && buttonList.map(name => (
+          {options && options.map(name => (
             <ListItem key={name}>
               <Button
                 type='button'
                 data-name={name}
-                onClick={this.props.handleIncrement}
+                onClick={onLeaveFeedback}
               >
                 {capitalize(name)}
               </Button>
@@ -27,4 +26,4 @@ class FeedBackOptions extends Component {
   }
 }
 
-export  default FeedBackOptions;
+export  default FeedbackOptions;
