@@ -1,29 +1,19 @@
-import React, { Component } from 'react';
-import { capitalize } from '../../utils';
-import { ListItem, Button, ButtonList } from './StyledComponents';
+import { ListItem, Button, ButtonList } from './FeedbackOptions.styled';
 
-class FeedbackOptions extends Component {
-  render() {
-    const { options, onLeaveFeedback } = this.props
+const FeedbackOptions = ({ options, onLeaveFeedback }) => {
+  return (
+    <div>
+      <ButtonList>
+        {options.map(name => (
+          <ListItem key={name}>
+            <Button type="button" onClick={() => onLeaveFeedback(name)}>
+              {name}
+            </Button>
+          </ListItem>
+        ))}
+      </ButtonList>
+    </div>
+  );
+};
 
-    return (
-      <div>
-        <ButtonList>
-          {options && options.map(name => (
-            <ListItem key={name}>
-              <Button
-                type='button'
-                data-name={name}
-                onClick={onLeaveFeedback}
-              >
-                {capitalize(name)}
-              </Button>
-            </ListItem>
-          ))}
-        </ButtonList>
-      </div>
-    )
-  }
-}
-
-export  default FeedbackOptions;
+export { FeedbackOptions };

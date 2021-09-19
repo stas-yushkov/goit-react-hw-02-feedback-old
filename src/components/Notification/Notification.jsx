@@ -1,12 +1,11 @@
-import { StyledNotification, Title } from './StyledComponents';
+import { StyledNotification, Title } from './Notification.styled';
 
 const Notification = ({ message }) => {
-
   return (
     <StyledNotification>
-      <Title>{ message }</Title>
+      <Title>{message}</Title>
     </StyledNotification>
-  )
-}
+  );
+};
 
-export default Notification;
+export { Notification };

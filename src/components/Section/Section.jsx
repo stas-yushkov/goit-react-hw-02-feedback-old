@@ -1,14 +1,15 @@
 import React from 'react';
-import { StyledSection, Title } from './StyledComponents';
+import { StyledSection, Title, Container } from './Section.styled';
 
 const Section = ({ title, children }) => {
   return (
     <StyledSection>
-      <Title>{ title }</Title>
-      { children }
+      <Container>
+        <Title>{title}</Title>
+        {children}
+      </Container>
     </StyledSection>
-  )
-
+  );
 };
 
-export default Section;
+export { Section };

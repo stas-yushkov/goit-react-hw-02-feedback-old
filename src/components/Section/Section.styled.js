@@ -8,3 +8,9 @@ export const StyledSection = styled.section`
 export const Title = styled.h2`
   color:red;
 `;
+
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+`;
