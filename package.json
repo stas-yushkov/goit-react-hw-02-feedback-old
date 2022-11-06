@@ -1,8 +1,8 @@
 {
-  "name": "goit-react-hw-02-feedback",
+  "name": "goit-react-hw-02-feedback-old",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://stas-yushkov.github.io/goit-react-hw-02-feedback",
+  "homepage": "https://stas-yushkov.github.io/goit-react-hw-02-feedback-old",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
