@@ -1,6 +1,6 @@
-# goit-react-hw-02-feedback
+# goit-react-hw-02-feedback-old
 
-goit-react-hw-02-feedback
+goit-react-hw-02-feedback-old
 
 # Getting Started with Create React App
 
